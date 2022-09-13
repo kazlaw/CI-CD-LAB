@@ -2,9 +2,8 @@ on: push
 jobs:
   first-job:
     runs-on: ubuntu-latest
-    container: python:3.11.0rc2-bullseye
+    container: node:17.6.0
     steps:
-      - run: docker --version
-      - run: git --version
-      - run: python --version
+      - run: node --version
+      - run: npm --version
       
