@@ -1,9 +1,10 @@
 on: push
 jobs:
   first-job:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
+    container: python:3.11.0rc2-bullseye
     steps:
       - run: docker --version
       - run: git --version
       - run: python --version
-      - run: mvn --version
+      
