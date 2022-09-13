@@ -1,0 +1,9 @@
+on: push
+jobs:
+  first-job:
+    runs-on: windows-latest
+    steps:
+      - run: docker --version
+      - run: git --version
+      - run: python --version
+      - run: mvn --version
